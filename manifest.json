@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Auto Connect",
+  "version": "1.0",
+  "description": "Automatically send connection requests on LinkedIn",
+  "permissions": ["storage", "tabs", "scripting", "notifications"],
+  "host_permissions": ["*://www.linkedin.com/*"],
+  "action": {
+    
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["*://www.linkedin.com/*"]
+    }
+  ]
+}

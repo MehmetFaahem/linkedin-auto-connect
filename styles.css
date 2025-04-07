@@ -1,0 +1,260 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f2ef;
+}
+
+.container {
+  width: 350px;
+  padding: 15px;
+}
+
+h1 {
+  color: #0a66c2;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  color: black;
+}
+
+#addNote{
+  color: black;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+}
+
+.stats{
+    font-size: 14px;
+    color: black;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: black;
+  background-color: white;
+}
+
+/* Fix for checkbox */
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+  accent-color: #0a66c2;
+  border: 1px solid #999;
+  background-color: #d4d4d4;
+}
+
+input[type="checkbox"]:not(:checked) {
+  accent-color: #999;
+  background-color: #f3f2ef;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #0a66c2;
+}
+
+/* Improve textarea styling */
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  color: black !important;
+  background-color: white !important;
+  font-family: Arial, sans-serif;
+}
+
+/* Add a wrapper for checkbox and label to align them */
+/* Improve checkbox wrapper styling */
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-wrapper label {
+  display: inline;
+  margin-left: 5px;
+  color: black !important; /* Force black color with !important */
+  font-weight: bold;
+}
+
+/* Add more specific selector for the checkbox label */
+#linkedin-auto-connect-modal .checkbox-wrapper label[for="addNote"] {
+  color: black !important;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary-btn {
+  background-color: #0a66c2;
+  color: white !important;
+}
+
+.primary-btn:hover {
+  background-color: #084b8a;
+}
+
+.secondary-btn {
+  background-color: #f3f2ef;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+}
+
+.secondary-btn:hover {
+  background-color: #e6e6e6;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status-container {
+  background-color: #e6f7ff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.status-container h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: black;
+}
+
+.instructions {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: black;
+}
+
+.instructions h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: black;
+}
+
+.instructions ol {
+  margin: 0;
+  padding-left: 20px;
+  color: black;
+}
+
+.instructions li {
+  color: black;
+}
+
+.notification {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: #0a66c2;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Modal specific styles */
+#linkedin-auto-connect-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100vh;
+  background: white;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+  z-index: 9999;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  color: black;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+/* Add these styles to your existing CSS */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.close-btn:hover {
+  background-color: #f3f2ef;
+  color: #0a66c2;
+}
+
+/* Fix for dark mode compatibility */
+#linkedin-auto-connect-modal * {
+  color: black;
+}
+
+#linkedin-auto-connect-modal p,
+#linkedin-auto-connect-modal span,
+#linkedin-auto-connect-modal label,
+#linkedin-auto-connect-modal h1,
+#linkedin-auto-connect-modal h3,
+#linkedin-auto-connect-modal li {
+  color: black;
+}
